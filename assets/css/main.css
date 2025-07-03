@@ -702,12 +702,12 @@ section,
 .section-title h2 {
   font-size: 32px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   padding-bottom: 20px;
   position: relative;
 }
 
-.section-title h2:after {
+/*.section-title h2:after {
   content: "";
   position: absolute;
   display: block;
@@ -718,7 +718,7 @@ section,
   right: 0;
   bottom: 0;
   margin: auto;
-}
+}*/
 
 .section-title p {
   margin-bottom: 0;
@@ -734,7 +734,7 @@ section,
   padding: 120px 0 60px 0;
   display: flex;
   align-items: center;
-  background: url("../img/reloj-fondo-hero.png") center center no-repeat;
+  background: url("../img/reloj-fondo-hero2.jpg") center center no-repeat;
   background-size: cover;
   background-position: right center;
   overflow: hidden; /* 🟢 esto es clave */
@@ -755,11 +755,29 @@ section,
   font-weight: 400;
 }
 
+.hero .btn-get-started {
+  color: var(--contrast-color);
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 36px;
+  border-radius: 4px;
+  transition: 0.5s;
+  border: 2px solid var(--contrast-color);
+}
+
+.hero .btn-get-started:hover {
+  color: rgb(16, 16, 82);
+  background: var(--contrast-color);
+}
+
 .hero-img {
   filter: drop-shadow(0px 6px 18px rgba(0, 0, 0, 0.6));
 }
 
-.hero::after {
+/*.hero::after {
   content: "";
   position: absolute;
   top: 0;
@@ -776,10 +794,10 @@ section,
   );
   background-size: 800% 800%;
   animation: backgroundShift 15s ease infinite;
-  opacity: 0.6; /* 👈 bajito para dejar ver la imagen */
+  opacity: 0.6;
   z-index: 2;
   pointer-events: none;
-}
+}*/
 
 @keyframes backgroundShift {
   0% { background-position: 0% 50%; }
@@ -1401,7 +1419,7 @@ body {
 }
 
 .faq .faq-container .faq-item .faq-toggle:hover {
-  color: var(--accent-color);
+  color: white;
 }
 
 .faq .faq-container .faq-active {
